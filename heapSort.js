@@ -1,5 +1,6 @@
 // Heapsort: relies on the property of heaps which is that after every operation (addition and removal), a parent is always smaller than both of its children. Therefore to sort, we just add all elements to the heap, then remove them.
 
+// Heap Data Structure
 var Heap = function() {
   this.storage = [];
 
@@ -46,6 +47,7 @@ var Heap = function() {
   };
 };
 
+// Sorting through use of a heap
 var heapSort = function(arr) {
   // Add all elements to the heap
   var heap = new Heap();
