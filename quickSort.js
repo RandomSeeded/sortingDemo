@@ -31,13 +31,4 @@ var quickSort = function(arr, start, end) {
   return arr;
 };
 
-// console.log(quickSort([1,3,2,4,5,5,9]));
-// console.log(quickSort([4,5,5,9]));
-// console.log(quickSort([4,5,5]));
-
-var randArr = [];
-for (var i = 0; i < 50; i++) {
-  randArr.push(Math.floor(Math.random()*100));
-}
-console.log(quickSort(randArr));
-
+console.log(quickSort([1,3,2,4,5]));
