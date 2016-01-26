@@ -1,5 +1,6 @@
 // Sleepsort: for each number, go to sleep for number seconds, then add it to the end of the array
 var sleepSort = function(arr) {
+  // Our sleep functions will run asynchronously, so we will return once all have completed (resolve the promise)
   return new Promise(function(resolve, reject) {
     var output = [];
     var done = 0;
