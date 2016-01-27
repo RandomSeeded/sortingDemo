@@ -1,6 +1,6 @@
 // Quick sort: divides the array into two sub-arrays, with elements smaller than and greater than a 'pivot.' These sub-arrays are then sorted recursively. The pivot is guaranteed to be in the correct place
 // This is an in-place implementation of quick-sort
-var quickSort = function(arr, start, end) {
+var quickSort = module.exports = function(arr, start, end) {
   start = start || 0;
   if (end === undefined) {
     end = arr.length;
@@ -30,5 +30,3 @@ var quickSort = function(arr, start, end) {
 
   return arr;
 };
-
-console.log(quickSort([1,3,2,4,5]));

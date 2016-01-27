@@ -1,5 +1,5 @@
 // Merge sort: we 'separate' the array into two subarrays, and sort each recursively. We then iterate over the two sorted subarrays and combine them into a sorted larger array
-var mergeSort = function(arr) {
+var mergeSort = module.exports = function(arr) {
   // Base case: an array of length 1 is sorted
   if (arr.length === 1) {
     return arr;
@@ -27,6 +27,3 @@ var mergeSort = function(arr) {
     return output;
   }
 };
-
-console.log(mergeSort([1,3,2,4,5]));
-console.log(mergeSort([1,3,2,4,5,9,6,7,10,21,1982]));

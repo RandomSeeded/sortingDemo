@@ -1,5 +1,5 @@
 // Insertion sort: similar to sorting a hand of cards. We grow a sorted array from the left. For each new element, we insert that element into its correct position in our sorted list.
-var insertionSort = function(arr) {
+var insertionSort = module.exports = function(arr) {
   // Iterate over the array to find each element to insert
   for (var i = 0; i < arr.length; i++) {
     var elem = arr[i];
@@ -16,5 +16,3 @@ var insertionSort = function(arr) {
   }
   return arr;
 };
-
-console.log(insertionSort([1,3,2,4,5]));

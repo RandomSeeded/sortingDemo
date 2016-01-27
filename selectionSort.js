@@ -1,5 +1,5 @@
 // Selection sort: builds up a sorted array from left to right by repeatedly selecting the smallest non-sorted element
-var selectionSort = function(arr) {
+var selectionSort = module.exports = function(arr) {
   for (var i = 0; i < arr.length; i++) {
     var min = arr[i];
     var minAt = i;
@@ -19,5 +19,3 @@ var selectionSort = function(arr) {
   }
   return arr;
 };
-
-console.log(selectionSort([1,3,2,4,5]));

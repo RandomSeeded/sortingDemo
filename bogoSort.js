@@ -1,5 +1,5 @@
 // Bogosort: randomly shuffle the array. If it's now sorted, you're done! Otherwise repeat
-var bogoSort = function(arr) {
+var bogoSort = module.exports = function(arr) {
   function isSorted(arr) {
     for (var i = 0; i < arr.length-1; i++) {
       if (arr[i] > arr[i+1]) {
@@ -21,5 +21,3 @@ var bogoSort = function(arr) {
   arr = output;
   return arr;
 };
-
-console.log(bogoSort([1,3,2,4,5,10,12,7]));

@@ -48,7 +48,7 @@ var Heap = function() {
 };
 
 // Sorting through use of a heap
-var heapSort = function(arr) {
+var heapSort = module.exports = function(arr) {
   // Add all elements to the heap
   var heap = new Heap();
   for (var i = 0; i < arr.length; i++) {
@@ -62,6 +62,3 @@ var heapSort = function(arr) {
   }
   return results;
 };
-
-console.log(heapSort([5,4,3,2,1]));
-console.log(heapSort([1,3,2,4,5]));
