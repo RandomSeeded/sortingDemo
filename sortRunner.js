@@ -42,15 +42,16 @@ var promiseFn = function(arr, algorithm, name) {
 
 // Definitions
 var sortingHandlers = {
-  sleepSort: promiseFn,
-  gnomeSort: standardSortHandler,
-  miracleSort: promiseFn,
-  selectionSort: standardSortHandler,
-  bubbleSort: standardSortHandler,
-  insertionSort: standardSortHandler,
-  mergeSort: standardSortHandler,
-  quickSort: standardSortHandler,
-  heapSort: standardSortHandler,
+  // sleepSort: promiseFn,
+  // gnomeSort: promiseFn,
+  // bogoSort: promiseFn,
+  // // miracleSort: promiseFn,
+  // selectionSort: promiseFn,
+  // bubbleSort: promiseFn,
+  // insertionSort: promiseFn,
+  // mergeSort: promiseFn,
+  quickSort: promiseFn,
+  // heapSort: promiseFn,
 };
 
 

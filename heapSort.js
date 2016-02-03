@@ -50,15 +50,17 @@ var Heap = function() {
 // Sorting through use of a heap
 var heapSort = module.exports = function(arr) {
   // Add all elements to the heap
-  var heap = new Heap();
-  for (var i = 0; i < arr.length; i++) {
-    heap.add(arr[i]);
-  }
+  return new Promise(function(resolve, reject) {
+    var heap = new Heap();
+    for (var i = 0; i < arr.length; i++) {
+      heap.add(arr[i]);
+    }
 
-  // Remove all elements from the heap, one at a time
-  var results = [];
-  while (heap.size > 0) {
-    results.push(heap.removeRoot());
-  }
-  return results;
+    // Remove all elements from the heap, one at a time
+    var results = [];
+    while (heap.size > 0) {
+      results.push(heap.removeRoot());
+    }
+    resolve(results);
+  });
 };
