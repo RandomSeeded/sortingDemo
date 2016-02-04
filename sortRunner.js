@@ -1,5 +1,5 @@
 var testArr = [];
-var intSize = 10;
+var intSize = 10; // just kidding they're not integers
 var numInts = 10000;
 
 // Randomly generates test data
