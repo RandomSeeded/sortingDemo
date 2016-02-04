@@ -9,10 +9,10 @@ var miracleSort = module.exports = function(arr) {
       }
       return true;
     }
-    setTimeout(function() {
+    setInterval(function() {
       if (isSorted(arr)) {
         resolve(arr);
       }
-    });
+    }, 1000);
   });
 }
