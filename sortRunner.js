@@ -42,16 +42,16 @@ var promiseFn = function(arr, algorithm, name) {
 
 // Definitions
 var sortingHandlers = {
-  // sleepSort: promiseFn,
-  // gnomeSort: promiseFn,
-  // bogoSort: promiseFn,
-  // // miracleSort: promiseFn,
-  // selectionSort: promiseFn,
-  // bubbleSort: promiseFn,
-  // insertionSort: promiseFn,
-  // mergeSort: promiseFn,
+  sleepSort: promiseFn,
+  gnomeSort: promiseFn,
+  bogoSort: promiseFn,
+  miracleSort: promiseFn,
+  selectionSort: promiseFn,
+  bubbleSort: promiseFn,
+  insertionSort: promiseFn,
+  mergeSort: promiseFn,
   quickSort: promiseFn,
-  // heapSort: promiseFn,
+  heapSort: promiseFn,
 };
 
 
@@ -66,3 +66,6 @@ for (var algorithm in sortingAlgorithms) {
   var arrCopy = testArr.slice();
   sortingHandlers[algorithm](arrCopy, sortingAlgorithms[algorithm], algorithm);
 }
+
+
+
